@@ -1,0 +1,9 @@
+name: 'PHPUnit for Symfony'
+description: 'PHPUnit via Symfony bridge'
+author: 'David Lumaye (chindit)'
+branding:
+    icon: 'check-circle'
+    color: 'purple'
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
