@@ -25,6 +25,7 @@ fi
 echo "## Installing composer"
 curl -L https://getcomposer.org/composer-stable.phar -o composer
 chmod +x composer
+ln -s composer /usr/bin/composer
 
 echo "## Running PHPUnit"
 echo "PHP Version : ${PHP_FULL_VERSION}"
