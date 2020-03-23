@@ -12,8 +12,7 @@ Add these lines to your YAML config file
 **WARNING** : Be sure you have these lines **before** :
 ```yaml
 - uses: actions/checkout@v2
-- name: Install dependencies
-  run: composer install --prefer-dist --no-progress --no-suggest
+- uses: php-actions/composer@v1
 ```
 
 First line is used to checkout code and second line is used to install
