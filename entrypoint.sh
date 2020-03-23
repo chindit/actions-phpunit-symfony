@@ -24,6 +24,7 @@ fi
 
 echo "## Installing composer"
 curl -L https://getcomposer.org/composer-stable.phar composer
+chmod +x composer
 composer install --prefer-dist --no-progress --no-suggest
 
 echo "## Running PHPUnit"
