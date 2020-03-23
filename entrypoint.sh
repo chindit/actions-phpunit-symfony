@@ -23,7 +23,7 @@ if [[ ! -f vendor/bin/simple-phpunit ]]; then
 fi
 
 echo "## Installing composer"
-curl -L https://getcomposer.org/composer-stable.phar composer
+curl -L https://getcomposer.org/composer-stable.phar -o composer
 chmod +x composer
 composer install --prefer-dist --no-progress --no-suggest
 
