@@ -22,6 +22,9 @@ if [[ ! -f vendor/bin/simple-phpunit ]]; then
   exit 1
 fi
 
+echo "## Installing git"
+apt install git
+
 echo "## Installing composer"
 curl -L https://getcomposer.org/composer-stable.phar -o /usr/bin/composer
 chmod +x /usr/bin/composer
