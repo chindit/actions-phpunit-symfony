@@ -24,7 +24,7 @@ fi
 
 echo "## Installing git"
 apt update
-apt install git
+apt -yq install git
 
 echo "## Installing composer"
 curl -L https://getcomposer.org/composer-stable.phar -o /usr/bin/composer
