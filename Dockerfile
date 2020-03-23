@@ -1,4 +1,4 @@
-FROM php:7.4-cli
+FROM ubuntu-latest
 
 LABEL version="1.0"
 LABEL repository="https://github.com/chindit/actions-phpunit-symfony"
