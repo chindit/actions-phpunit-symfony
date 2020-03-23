@@ -23,9 +23,8 @@ if [[ ! -f vendor/bin/simple-phpunit ]]; then
 fi
 
 echo "## Installing composer"
-curl -L https://getcomposer.org/composer-stable.phar -o composer
-chmod +x composer
-ln -s composer /usr/bin/composer
+curl -L https://getcomposer.org/composer-stable.phar -o /usr/bin/composer
+chmod +x /usr/bin/composer
 
 echo "## Running PHPUnit"
 echo "PHP Version : ${PHP_FULL_VERSION}"
