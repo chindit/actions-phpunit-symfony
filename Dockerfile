@@ -7,5 +7,5 @@ LABEL maintainer="David Lumaye <littletiger58@gmail.com>"
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 
-RUN chmod +x /entrypoint.sh && chmod a+x /phpstan
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
