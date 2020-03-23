@@ -23,7 +23,7 @@ if [[ ! -f vendor/bin/simple-phpunit ]]; then
 fi
 
 echo "## Installing git"
-apk add git
+uname -a
 
 echo "## Installing composer"
 curl -L https://getcomposer.org/composer-stable.phar -o /usr/bin/composer
