@@ -22,6 +22,10 @@ if [[ ! -f vendor/bin/simple-phpunit ]]; then
   exit 1
 fi
 
+echo "## Installing composer"
+curl -L https://getcomposer.org/composer-stable.phar composer
+composer install --prefer-dist --no-progress --no-suggest
+
 echo "## Running PHPUnit"
 echo "PHP Version : ${PHP_FULL_VERSION}"
 ./vendor/bin/simple-phpunit --version
