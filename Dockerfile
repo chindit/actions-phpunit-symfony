@@ -9,5 +9,5 @@ RUN curl -L https://getcomposer.org/composer-stable.phar -o /composer
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 
-RUN chmod +x /entrypoint.sh && chmod a+x /composer
+RUN chmod +x /entrypoint.sh && chmod a+x /github/workspace/composer
 ENTRYPOINT ["/entrypoint.sh"]
