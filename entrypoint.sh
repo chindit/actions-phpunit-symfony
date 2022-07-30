@@ -34,4 +34,4 @@ echo "## Running PHPUnit"
 echo "PHP Version : ${PHP_FULL_VERSION}"
 ./vendor/bin/simple-phpunit --version
 
-php -d memory_limit=-1 ./vendor/bin/simple-phpunit
+php -d memory_limit=-1 ./vendor/bin/simple-phpunit --testdox
